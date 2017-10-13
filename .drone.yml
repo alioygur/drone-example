@@ -9,3 +9,4 @@ pipeline:
       - go get ./...
       - go test
       - go build
+      - echo "okey"
