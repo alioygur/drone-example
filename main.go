@@ -21,7 +21,7 @@ func (s *server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 
-	fmt.Fprintf(w, "hostname is: %s", hostname)
+	fmt.Fprintf(w, "hostname is this: %s", hostname)
 }
 
 func main() {
