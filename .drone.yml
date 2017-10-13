@@ -6,7 +6,6 @@ pipeline:
   build:
     image: golang:latest
     commands:
-      exit 0
-      # - go get ./...
-      # - go test
-      # - go build
+      - go get ./...
+      - go test
+      - go build
