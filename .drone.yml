@@ -3,8 +3,14 @@ workspace:
   path: src/github.com/alioygur/drone-example
 
 pipeline:
-  build:
+  test:
     image: golang:latest
     commands:
       - go get ./...
-      - go build
+      - go test
+  build:
+    image: docker
+    commands:
+      - docker build -t alioygur/drone-example .
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
