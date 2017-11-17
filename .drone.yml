@@ -14,4 +14,4 @@ pipeline:
     commands:
       - docker build -t alioygur/drone-example .
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.socks
