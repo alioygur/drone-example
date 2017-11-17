@@ -8,7 +8,6 @@ pipeline:
     commands:
       - go get ./...
       - go test
-
   build:
     image: docker
     commands:
